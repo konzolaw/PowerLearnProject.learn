@@ -3,82 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"], input[type="date"], input[type="email"], input[type="tel"], select {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-        }
-        .buttons {
-            margin-top: 20px;
-        }
-        button {
-            padding: 10px 15px;
-            margin-right: 10px;
-        }
-    </style>
+    <title>My Portfolio</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #010a01;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.introduction {
+    background-color: #c7d238;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.skills {
+    background-color: #7e6927;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #f8f0f0;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #f1efef;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #0e0c0c;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    header, .introduction, .skills, .contact {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .skills li {
+        margin: 5px 0;
+        padding: 8px;
+    }
+}
+</style>
+
 </head>
 <body>
-
-    <h2>Student Registration Form</h2>
-    <form action="/submit_registration" method="POST">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender" required>
-                <option value="">Select</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-        
-        <div class="form-group">
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="telephone">Telephone:</label>
-            <input type="tel" id="telephone" name="telephone" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="course">Course:</label>
-            <input type="text" id="course" name="course" required>
-        </div>
-        
-        <div class="buttons">
-            <button type="submit">Register</button>
-            <button type="reset">Cancel</button>
-        </div>
-    </form>
-
+    <header>
+        <h1>Irke Konzolaw</h1>
+    </header>
+    
+    <section class="introduction">
+        <h2>Introduction</h2>
+        <p>Hello! I'm Irke, and I'm a Tech Enthusisasts. I have a passion for CyberSecurity.</p>
+    </section>
+    
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>UI/UX design</li>
+            <li>Graphic design</li>
+            <li>Database Engineering</li>
+            <li>Frontend web-development</li>
+        </ul>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:iykekonzolaw21@gmail.com">iykekonzolaw21@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/konzolaw">konzolaw</a></p>
+    
+    </section>
 </body>
 </html>
